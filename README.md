@@ -1,2 +1,2 @@
 # Lab 9 - Starter
-https://github.com/rcabotaje/Lab9_Starter.git
+https://rcabotaje.github.io/Lab9_Starter/
