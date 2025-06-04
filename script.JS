@@ -81,6 +81,14 @@ let form = document.querySelector('form');
             case 'Console dirxml':
                 console.dirxml(document.querySelector('#error-btns'));
                 break;
+            case 'Trigger a Global Error':
+                throw new ValidationError("Whoops!");
         }
         });
     });
+    class ValidationError extends Error {
+        constructor(message) {
+          super(message); // (1)
+          this.name = "ValidationError"; // (2)
+        }
+      }
